@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>场景编辑器</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/editor.css">
+</head>
+<body>
+    <div>
+        <input type="file" id="localSceneZipFileInput" accept=".zip,.biliscene" style="display:none"/>
+        <input type="button" id="importSceneBtn" value="选择本地场景 （.zip）"/>
+        <span>已选择场景文件：</span><span id="localSceneZipFileName">--</span>
+    </div>
+    <br>
+    <button id="force-redarw">强行重新绘制</button>
+    <input id="scene-name" type="text" placeholder="场景名"></input>
+    <br>
+    <input id="scene-width" type="number" placeholder="场景宽度 (px)"></input>
+    x
+    <input id="scene-height" type="number" placeholder="场景高度 (px)"></input>
+    <div id="edit-box" class="edit-box">
+        <div id="view-box" class="view-box">
+
+        </div>
+        <div id="box-edge" class="box-edge"></div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,122 @@
+.view-box {
+    position: relative;
+    background-color: black;
+    /* overflow: hidden; */
+}
+
+.edit-box {
+    position: relative;
+    padding: 120px;
+    background: linear-gradient(45deg, rgba(128, 128, 128, 0.5) 25%, rgba(32, 32, 32, 0.5) 0, rgba(32, 32, 32, 0.5) 50%, rgba(128, 128, 128, 0.5) 0, rgba(128, 128, 128, 0.5) 75%, rgba(32, 32, 32, 0.5) 0);
+    background-size: 42px 42px;
+    width: max-content;
+    height: max-content;
+    overflow: hidden;
+}
+
+.box-edge {
+    position: absolute;
+    box-shadow: inset 0px 0px 0px 120px rgba(255, 255, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: fade 2500ms infinite;
+    -webkit-animation: fade 2500ms infinite;
+}
+
+.sub-scene-item-content {
+    pointer-events: none;
+}
+
+.sub-scene-item {
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.25); */
+}
+
+/* .sub-scene-item:hover {
+    box-shadow: inset 0px 0px 0px 10px rgba(255, 64, 64, 0.5);
+    box-sizing: border-box;
+} */
+
+/* .moveable-item { 
+    cursor: move;
+} */
+
+.resize-ctrl-btn {
+    /* opacity: 0; */
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    cursor: se-resize;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 0, 0);
+}
+
+.sub-scene-item-border {
+    position: absolute;
+    box-shadow: inset 0px 0px 0px 10px rgba(255, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: fade 500ms infinite;
+    -webkit-animation: fade 500ms infinite;
+}
+
+.text-source-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text-source-horizontal-left-scroll {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    white-space: nowrap;
+    -webkit-animation: text-source-horizontal-left-scroll 30s linear infinite;
+    animation: text-source-horizontal-left-scroll 30s linear infinite;
+}
+
+.text-source-scroll-content {
+    margin: 0;
+}
+
+@keyframes text-source-horizontal-left-scroll {
+    0% {
+        transform: translate(-50%);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1.0;
+    }
+}

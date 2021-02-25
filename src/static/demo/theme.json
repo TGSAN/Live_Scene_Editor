@@ -1,0 +1,172 @@
+{
+  "FilterID": "SceneSource",
+  "FilterName": "Scene2",
+  "FilterConfig": {
+    "SceneWidth": 1280,
+    "SceneHeight": 720,
+    "SceneItems": [
+      {
+        "ItemLeft": 0,
+        "ItemTop": 0,
+        "ItemWidth": 1280,
+        "ItemHeight": 720,
+        "FitMode": "FitOuter",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "ImageSource",
+          "FilterName": "背景",
+          "FilterConfig": {
+            "image_path": "/data/user/0/com.bilibili.bilibililive/files/scene/scene2/bg.png",
+            "image_from": "file"
+          }
+        }
+      },
+      {
+        "ItemLeft": 59,
+        "ItemTop": 16,
+        "ItemWidth": 111,
+        "ItemHeight": 117,
+        "FitMode": "FitInner",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "ImageSource",
+          "FilterName": "左上图",
+          "FilterConfig": {
+            "image_path": "/data/user/0/com.bilibili.bilibililive/files/scene/scene2/22smile.png",
+            "image_from": "file"
+          }
+        }
+      },
+      {
+        "ItemLeft": 961,
+        "ItemTop": 18,
+        "ItemWidth": 308,
+        "ItemHeight": 206,
+        "FitMode": "FitInner",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "ImageSource",
+          "FilterName": "右上图",
+          "FilterConfig": {
+            "image_path": "/data/user/0/com.bilibili.bilibililive/files/scene/scene2/22tv.png",
+            "image_from": "file"
+          }
+        }
+      },
+      {
+        "ItemLeft": 0,
+        "ItemTop": 0,
+        "ItemWidth": 1280,
+        "ItemHeight": 720,
+        "FitMode": "FitInner",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "ImageSource",
+          "FilterName": "结构",
+          "FilterConfig": {
+            "image_path": "/data/user/0/com.bilibili.bilibililive/files/scene/scene2/frame.png",
+            "image_from": "file"
+          }
+        }
+      },
+      {
+        "ItemLeft": 38,
+        "ItemTop": 122,
+        "ItemWidth": 892,
+        "ItemHeight": 502,
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "CommonSource",
+          "FilterName": "主元素",
+          "FilterConfig": {
+            "source_id": 0
+          }
+        }
+      },
+      {
+        "ItemLeft": 196,
+        "ItemTop": 32,
+        "ItemWidth": 648,
+        "ItemHeight": 60,
+        "FitMode": "FitHeight",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "TextSource",
+          "FilterName": "页标题",
+          "FilterConfig": {
+            "content": "我今天没吃药，感觉自己萌萌哒！",
+            "color": "#6785BC",
+            "size": 60,
+            "stroke_color": "#ffffff",
+            "stroke_width": 0,
+            "scroll_orientation": "Horizontal",
+            "text_align": "Center"
+          }
+        }
+      },
+      {
+        "ItemLeft": 38,
+        "ItemTop": 650,
+        "ItemWidth": 560,
+        "ItemHeight": 50,
+        "FitMode": "FitHeight",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "TextSource",
+          "FilterName": "尾注",
+          "FilterConfig": {
+            "content": "我今天没吃药，感觉自己萌萌哒！",
+            "color": "#6785BC",
+            "size": 50,
+            "stroke_color": "#ffffff",
+            "stroke_width": 0,
+            "scroll_orientation": "Horizontal",
+            "text_align": "Center"
+          }
+        }
+      },
+      {
+        "ItemLeft": 994,
+        "ItemTop": 240,
+        "ItemWidth": 246,
+        "ItemHeight": 236,
+        "FitMode": "NoFit",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "TextSource",
+          "FilterName": "文字块 上",
+          "FilterConfig": {
+            "content": "我今天\n没吃药\n感觉自己萌萌哒",
+            "color": "#656186",
+            "size": 32,
+            "stroke_color": "#ffffff",
+            "stroke_width": 0,
+            "scroll_orientation": "None",
+            "text_align": "Left"
+          }
+        }
+      },
+      {
+        "ItemLeft": 994,
+        "ItemTop": 532,
+        "ItemWidth": 246,
+        "ItemHeight": 154,
+        "FitMode": "NoFit",
+        "IsShow": true,
+        "Filter": {
+          "FilterID": "TextSource",
+          "FilterName": "文字块 下",
+          "FilterConfig": {
+            "content": "我今天没吃药\n感觉自己萌萌哒",
+            "color": "#656186",
+            "size": 32,
+            "stroke_color": "#ffffff",
+            "stroke_width": 0,
+            "scroll_orientation": "None",
+            "text_align": "Left"
+          }
+        }
+      }
+    ]
+  }
+}
